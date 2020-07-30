@@ -4,14 +4,10 @@ repo used for terraform
 ```shell
 tamir@DESKTOP-RIR353L:~/ass12$ aws ec2 run-instances --image-id ami-079024c517d22af5b --count 1 --instance-type t2.micro --security-group-ids launch-wizard-1 --key-name awskeypair
 ```
------------------------------------------------------------------------------
-|                               RunInstances                                |
-|-------------------------------|-------------------------------------------|
+> RunInstances
 |  OwnerId                      |  447436375177                             |
 |  ReservationId                |  r-062046e28dc63c8ca                      |
-|-------------------------------|-------------------------------------------|
-|                                Instances                                |
-|------------------------|------------------------------------------------|
+> Instances
 |  AmiLaunchIndex        |  0                                             |
 |  Architecture          |  x86_64                                        |
 |  ClientToken           |  c7429d95-a830-4ef2-bdfb-5449563a535a          |
@@ -32,29 +28,19 @@ tamir@DESKTOP-RIR353L:~/ass12$ aws ec2 run-instances --image-id ami-079024c517d2
 |  SubnetId              |  subnet-b3b97fcf                               |
 |  VirtualizationType    |  hvm                                           |
 |  VpcId                 |  vpc-267ede4c                                  |
-|------------------------|------------------------------------------------|
-|                   CapacityReservationSpecification                    |
-|---------------------------------------------------------|-------------|
+> CapacityReservationSpecification
 |  CapacityReservationPreference                          |  open       |
-|---------------------------------------------------------|-------------|
-|                              CpuOptions                               |
-|-------------------------------------------------------|---------------|
+> CpuOptions
 |  CoreCount                                            |  1            |
 |  ThreadsPerCore                                       |  1            |
-|-------------------------------------------------------|---------------|
-|                            MetadataOptions                            |
-|-------------------------------------------------|---------------------|
+> MetadataOptions
 |  HttpEndpoint                                   |  enabled            |
 |  HttpPutResponseHopLimit                        |  1                  |
 |  HttpTokens                                     |  optional           |
 |  State                                          |  pending            |
-|-------------------------------------------------|---------------------|
-|                              Monitoring                               |
-|-----------------------------|-----------------------------------------|
+> Monitoring
 |  State                      |  disabled                               |
-|-----------------------------|-----------------------------------------|
-|                           NetworkInterfaces                           |
-|---------------------|-------------------------------------------------|
+> NetworkInterfaces
 |  Description        |                                                 |
 |  InterfaceType      |  interface                                      |
 |  MacAddress         |  06:47:2b:f0:90:74                              |
@@ -66,43 +52,29 @@ tamir@DESKTOP-RIR353L:~/ass12$ aws ec2 run-instances --image-id ami-079024c517d2
 |  Status             |  in-use                                         |
 |  SubnetId           |  subnet-b3b97fcf                                |
 |  VpcId              |  vpc-267ede4c                                   |
-|---------------------|-------------------------------------------------|
-|                             Attachment                              |
-|----------------------------|----------------------------------------|
+> Attachment
 |  AttachTime                |  2020-07-30T14:33:48.000Z              |
 |  AttachmentId              |  eni-attach-086ca79e0a28a3220          |
 |  DeleteOnTermination       |  True                                  |
 |  DeviceIndex               |  0                                     |
 |  Status                    |  attaching                             |
-|----------------------------|----------------------------------------|
-|                               Groups                                |
-|-----------------------|---------------------------------------------|
+> Groups
 |  GroupId              |  sg-007206605faa0cd27                       |
 |  GroupName            |  launch-wizard-1                            |
-|-----------------------|---------------------------------------------|
-|                         PrivateIpAddresses                          |
-|-------------------|-------------------------------------------------|
+> PrivateIpAddresses
 |  Primary          |  True                                           |
 |  PrivateDnsName   |  ip-172-31-45-7.eu-central-1.compute.internal   |
 |  PrivateIpAddress |  172.31.45.7                                    |
-|-------------------|-------------------------------------------------|
-|                               Placement                               |
-|-------------------------------------|---------------------------------|
+> Placement
 |  AvailabilityZone                   |  eu-central-1b                  |
 |  GroupName                          |                                 |
 |  Tenancy                            |  default                        |
-|-------------------------------------|---------------------------------|
-|                            SecurityGroups                             |
-|------------------------|----------------------------------------------|
+> SecurityGroups
 |  GroupId               |  sg-007206605faa0cd27                        |
 |  GroupName             |  launch-wizard-1                             |
-|------------------------|----------------------------------------------|
-|                                 State                                 |
-|-----------------------------|-----------------------------------------|
+> State
 |  Code                       |  0                                      |
 |  Name                       |  pending                                |
-|-----------------------------|-----------------------------------------|
-|                              StateReason                              |
-|----------------------------------|------------------------------------|
+> StateReason
 |  Code                            |  pending                           |
 |  Message                         |  pending                           |
